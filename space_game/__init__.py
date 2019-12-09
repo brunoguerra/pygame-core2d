@@ -1,0 +1,1 @@
+from space_game.game import SpaceGame
