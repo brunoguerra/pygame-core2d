@@ -7,6 +7,9 @@ A declarative way to jump from configuration to fun with pygame
 
 Start code:
 ```python
+from core2d import Game, Player, Sprite, Enemy, Stage
+
+
 class IntroStage(Stage):
     def setup(self):
         self.set_options({
