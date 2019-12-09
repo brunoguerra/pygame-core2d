@@ -14,12 +14,8 @@ class IntroStage(Stage):
         })
 
 class EpicDungeon(Sprite):
-    def __init__(self, stage, enemies):
-        super().__init__(stage._game)
-        self.enemies = enemies
-
-    def update(self):
-        pass
+    def setup(self, stage, enemies):
+        self.enemies = SpaceEnemyFactory(enemies)
 
 
 class GameStage(Stage):
